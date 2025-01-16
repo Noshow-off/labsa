@@ -20,21 +20,21 @@ def stream_markup_timerr(_, videoid, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     umm = math.floor(percentage)
     if 0 < umm <= 40:
-        bar = "◉——————————"
+        bar = "⋆——————————"
     elif 10 < umm < 20:
-        bar = "—◉—————————"
+        bar = "—⋆—————————"
     elif 20 < umm < 30:
-        bar = "——◉————————"
+        bar = "——⋆————————"
     elif 30 <= umm < 40:
-        bar = "———◉———————"
+        bar = "———⋆———————"
     elif 40 <= umm < 50:
-        bar = "————◉——————"
+        bar = "————⋆——————"
     elif 50 <= umm < 60:
-        bar = "——————◉————"
+        bar = "——————⋆————"
     elif 50 <= umm < 70:
-        bar = "———————◉———"
+        bar = "———————⋆———"
     else:
-        bar = "——————————◉"
+        bar = "——————————⋆"
     buttons = [
         [
             InlineKeyboardButton(
@@ -82,21 +82,21 @@ def telegram_markup_timer(_, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     umm = math.floor(percentage)
     if 0 < umm <= 40:
-        bar = "◉——————————"
+        bar = "⋆——————————"
     elif 10 < umm < 20:
-        bar = "—◉—————————"
+        bar = "—⋆—————————"
     elif 20 < umm < 30:
-        bar = "——◉————————"
+        bar = "——⋆————————"
     elif 30 <= umm < 40:
-        bar = "———◉———————"
+        bar = "———⋆———————"
     elif 40 <= umm < 50:
-        bar = "————◉——————"
+        bar = "————⋆——————"
     elif 50 <= umm < 60:
-        bar = "——————◉————"
+        bar = "——————⋆————"
     elif 50 <= umm < 70:
-        bar = "———————◉———"
+        bar = "———————⋆———"
     else:
-        bar = "——————————◉"
+        bar = "——————————⋆"
     buttons = [
         [
             InlineKeyboardButton(
@@ -134,7 +134,7 @@ def telegram_markupp(_, chat_id):
 
 ## By Anon
 close_keyboard = InlineKeyboardMarkup(
-    [[InlineKeyboardButton(text="〆 ᴄʟᴏsᴇ 〆", callback_data="close")]]
+    [[InlineKeyboardButton(text="⋆ ᴄʟᴏsᴇ ⋆", callback_data="close")]]
 )
 
 ## Search Query Inline
@@ -242,7 +242,7 @@ def queue_markupp(_, videoid, chat_id):
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
-        [InlineKeyboardButton(text="〆 ᴄʟᴏsᴇ 〆", callback_data="close")],
+        [InlineKeyboardButton(text="⋆ ᴄʟᴏsᴇ ⋆", callback_data="close")],
     ]
     return buttons
 
@@ -283,7 +283,7 @@ def track_markup(_, videoid, user_id, channel, fplay):
         ],
         [
             InlineKeyboardButton(
-                text="๏ ᴍᴏʀᴇ ๏",
+                text="⋆ ᴍᴏʀᴇ ⋆",
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
         ],
@@ -298,21 +298,21 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     umm = math.floor(percentage)
     if 0 < umm <= 40:
-        bar = "◉——————————"
+        bar = "⋆——————————"
     elif 10 < umm < 20:
-        bar = "—◉—————————"
+        bar = "—⋆—————————"
     elif 20 < umm < 30:
-        bar = "——◉————————"
+        bar = "——⋆————————"
     elif 30 <= umm < 40:
-        bar = "———◉———————"
+        bar = "———⋆———————"
     elif 40 <= umm < 50:
-        bar = "————◉——————"
+        bar = "————⋆——————"
     elif 50 <= umm < 60:
-        bar = "——————◉————"
+        bar = "——————⋆————"
     elif 50 <= umm < 70:
-        bar = "———————◉———"
+        bar = "———————⋆———"
     else:
-        bar = "——————————◉"
+        bar = "——————————⋆"
 
     buttons = [
         [
@@ -326,7 +326,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 text="II ᴘᴀᴜsᴇ",
                 callback_data=f"ADMIN Pause|{chat_id}",
             ),
-            InlineKeyboardButton(text="▢ sᴛᴏᴘ", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="⋆ sᴛᴏᴘ ⋆", callback_data=f"ADMIN Stop|{chat_id}"),
             InlineKeyboardButton(
                 text="sᴋɪᴘ ‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
             ),
@@ -369,10 +369,10 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="📥 ᴠɪᴅᴇᴏ", callback_data=f"downloadvideo {videoid}"
+                text="⋆ ᴠɪᴅᴇᴏ ⋆", callback_data=f"downloadvideo {videoid}"
             ),
             InlineKeyboardButton(
-                text="📥 ᴀᴜᴅɪᴏ", callback_data=f"downloadaudio {videoid}"
+                text="⋆ ᴀᴜᴅɪᴏ ⋆", callback_data=f"downloadaudio {videoid}"
             ),
         ],
         [
@@ -554,21 +554,21 @@ def stream_markup_timer2(_, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     umm = math.floor(percentage)
     if 0 < umm <= 40:
-        bar = "◉——————————"
+        bar = "⋆——————————"
     elif 10 < umm < 20:
-        bar = "—◉—————————"
+        bar = "—⋆—————————"
     elif 20 < umm < 30:
-        bar = "——◉————————"
+        bar = "——⋆————————"
     elif 30 <= umm < 40:
-        bar = "———◉———————"
+        bar = "———⋆———————"
     elif 40 <= umm < 50:
-        bar = "————◉——————"
+        bar = "————⋆——————"
     elif 50 <= umm < 60:
-        bar = "——————◉————"
+        bar = "——————⋆————"
     elif 50 <= umm < 70:
-        bar = "———————◉———"
+        bar = "———————⋆———"
     else:
-        bar = "——————————◉"
+        bar = "——————————⋆"
 
     buttons = [
         [
@@ -755,21 +755,21 @@ def panel_markup_4(_, vidid, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     umm = math.floor(percentage)
     if 0 < umm <= 40:
-        bar = "◉——————————"
+        bar = "⋆——————————"
     elif 10 < umm < 20:
-        bar = "—◉—————————"
+        bar = "—⋆—————————"
     elif 20 < umm < 30:
-        bar = "——◉————————"
+        bar = "——⋆————————"
     elif 30 <= umm < 40:
-        bar = "———◉———————"
+        bar = "———⋆———————"
     elif 40 <= umm < 50:
-        bar = "————◉——————"
+        bar = "————⋆——————"
     elif 50 <= umm < 60:
-        bar = "——————◉————"
+        bar = "——————⋆————"
     elif 50 <= umm < 70:
-        bar = "———————◉———"
+        bar = "———————⋆———"
     else:
-        bar = "——————————◉"
+        bar = "——————————⋆"
 
     buttons = [
         [
